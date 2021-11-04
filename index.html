@@ -6,45 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Unit 05 Restaurant</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+
+
 </head>
 
 
 
 <body>
 <!-- header -->
-    <header>
+    <header class="clearfix">
         <figure class="logo">
-            <img src="images/logo1.png">
+            <img src="images/logo1.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
         </figure>
             <h1>BFF Turon</h1>
             <h3>Filipino Food Rocks!</h3>
         
     </header>
-    <nav>
-        <a href="#">Menu</a>
-        <a href="#">Locations</a>
-        <a href="#">Contact</a>
-        <a href="#" class="active">Our Story</a>
+
+<!-- navigation -->
+    <nav class="clearfix">
+        <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="#">Our Story</a></li>
+    </ul>
     </nav>
+
+<!-- main -->
     <main>
         <h2>Our Story</h2>
-        <div class="main-content">
-            <p>   
-                With two No. 1 albums on the Billboard World chart and seven hit singles, it isn’t hard understand why BLACKPINK is one of the most popular girl groups 
-                in the world. But how were BLACKPINK’s members discovered? Lisa, Jennie, Rosé and Jisoo have been in the band since it debuted with “Boombayah” in 2016, but what were their lives like before BLACKPINK and how did they become trainees for YG Entertainment? Well, like most K-pop bands, BLACKPINK’s road to success is complicated.             
-                BLACKPINK, formed by YG Entertainment (one of the “Big 3” entertainment companies in K-pop), debuted in August 2016 with their first single “Boombayah.” 
-                <br/>
-                Since then, the four-member girl group has achieved international success. The band, which has sold millions of records worldwide, became the first K-pop 
-                act to perform at Coachella in April 2019. 
-                <br/>
-                The girl group also has a song, titled “Kiss and Make Up,” with Grammy winner Dua Lipa, and has caught the attention of celebrities like Harry Styles 
-                (who attended one of their concerts in April) and Ariana Grande. 
-                <br/>
-                So, yes, if you haven’t heard of BLACKPINK by now, it’s time to catch up. And what a better way to start than learning how the band’s four 
-                members—Lisa, Jennie, Rosé and Jisoo—became a part of BLACKPINK in the first place.
-            </p>
+        <figure class="myphoto"></figure>
+        <img src="images/turon.jpg">
+        <figcaption>Turon</figcaption>
+        <p>BFF Turon is a Filipino restaurant located in West Jordan Utah.
+             The restaurant offers a range of authentic Filipino dishes.Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Pellentesque tempor sem id dolor volutpat, 
+              vitae tempus turpis blandit. Cras accumsan augue id est porta, eget vulputate risus 
+              volutpat. Nulla fringilla dui nec blandit ullamcorper. Quisque facilisis,
+               risus quis dictum tincidunt, mauris elit efficitur tellus, quis dignissim
+               rna purus et ipsum. Sed sed arcu in odio pretium cursus vitae venenatis 
+               eros. Fusce vitae turpis ut tellus viverra mattis eget quis erat. Vivamus
+                ac blandit massa, at consequat ipsum. Maecenas efficitur congue cursus.
+                Suspendisse sit amet lorem aliquet, varius erat sit amet, egestas elit.
+                 Nunc imperdiet dictum posuere.</p>
         </div>
     </main>
+
+<!-- footer -->    
     <footer>
         <p>©2021 &bull; Camille Hall</p>
     </footer>
